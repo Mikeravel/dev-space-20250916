@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 from mycode import mdwpa
 #from LWPA import mpwpa
 from NewWPA import nlwpa
-
-
+from PSO_GA_DWPA import psogadwpa
+from RMPP import MPPWPA_reproduced
 def main():
-    plan, task_complete_time, average_time, gbest_fitness, best_fitness_mat = nlwpa().run()
+    plan, task_complete_time, average_time, gbest_fitness, best_fitness_mat = MPPWPA_reproduced().run()
 
     print('改进狼群算法求解情况：')
     print('分配方案：', plan)
